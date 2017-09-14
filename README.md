@@ -43,6 +43,7 @@ and the `options` object may contain the following keys:
 
 * *logging* (String): 'none', 'basic', 'debug' - level of logging for all the tasks - use 'debug' in case of any issues
 * *overwrite* (String): 'none', 'older', 'all' - determines which files should be overwritten when downloading/uploading - 'older' compares the date of modification of local and remote files
+* *testingTimezoneDir* (String): default null - using default home directory if null. The directory should have Read/Write permission in order to adjust timezone for overwriting files.
 
 ### Connecting
 After creating the new object you have to manually connect to the server by using the `connect` method:
